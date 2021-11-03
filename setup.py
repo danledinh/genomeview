@@ -36,8 +36,8 @@ setup(name="genomeview",
       author="Noah Spies",
       packages=find_packages(),
 
-      setup_requires=["cython", "pysam", "numpy"],
-      install_requires=["pysam", "numpy"], 
+      setup_requires=["cython==0.29.4", "pysam==0.15.2", "numpy==1.16.1"],
+      install_requires=["pysam==0.15.2", "numpy==1.16.1"], 
       ext_modules = [
           Extension("genomeview._quickconsensus",
                   sources=["genomeview/_quickconsensus.pyx"],
