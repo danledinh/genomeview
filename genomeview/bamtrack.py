@@ -3,7 +3,7 @@ import pysam
 
 from genomeview.track import Track
 from genomeview.intervaltrack import Interval, IntervalTrack
-from genomeview import MismatchCounts
+from genomeview.quickconsensus import MismatchCounts
 from genomeview.utilities import match_chrom_format
 
 
