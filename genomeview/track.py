@@ -15,7 +15,7 @@ class Track:
         
     def render_label(self, renderer):
         if self.name is not None:
-            yield from renderer.text_with_background(5, 14, self.name, anchor="start", size=18, bg_opacity=0.9)
+            yield from renderer.text_with_background(5, 14, self.name, anchor="start", size=12, bg_opacity=0.9)
 
         
 class TrackLabel:
@@ -28,4 +28,4 @@ class TrackLabel:
         pass
 
     def render(self, renderer):
-        yield from renderer.text(5, 20, self.label, anchor="start", size=16, **{"font-weight":"bold"})
+        yield from renderer.text(5, 20, self.label, anchor="start", size=12, **{"font-weight":"bold"})
