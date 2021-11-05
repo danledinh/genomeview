@@ -28,4 +28,4 @@ class TrackLabel:
         pass
 
     def render(self, renderer):
-        yield from renderer.text(5, 20, self.label, anchor="start", size=24, **{"font-weight":"bold"})
+        yield from renderer.text(5, 20, self.label, anchor="start", size=16, **{"font-weight":"bold"})
